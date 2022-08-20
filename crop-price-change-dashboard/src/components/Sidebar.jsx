@@ -19,24 +19,20 @@ function Sidebar() {
         <LinksContainer>
           <Links>
             <Link>
-              <RiHomeLine>
-                <h3>Dashboard</h3>
-              </RiHomeLine>
+              <RiHomeLine/>
+              <h3>Dashboard</h3>
             </Link>
             <Link>
-              <RiFileCopyLine>
-                <h3>Projects</h3>
-              </RiFileCopyLine>
+              <RiFileCopyLine/>
+              <h3>Projects</h3>
             </Link>
             <Link>
-              <FaWallet>
-                <h3>Invoices</h3>
-              </FaWallet>
+              <FaWallet/>
+              <h3>Invoices</h3>
             </Link>
             <Link>
-              <AiOutlinePieChart>
-                <h3>Reports</h3>
-              </AiOutlinePieChart>
+              <AiOutlinePieChart/>
+              <h3>Reports</h3>
             </Link>
           </Links>
           <ContactContainer>
@@ -57,6 +53,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 gap: 3rem;
+// justify-content: center;
 `;
 
 const ProfileContainer = styled.div`
@@ -64,11 +61,13 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
+text-align: center;
 `;
 
 const Avatar = styled.img`
 height: 7rem;
-border-radius: 50%;
+width: 7rem;
+border-radius: 7rem;
 margin-top: 20%;
 `;
 

@@ -1,6 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+import Earnings from "./Earnings";
+import Info from "./Info";
+import Invoices from "./Invoices";
+import JoinSlack from "./JoinSlack";
 import Navbar from "./Navbar";
+import Projects from "./Projects";
 
 function MainContent() {
   return (
@@ -8,11 +13,23 @@ function MainContent() {
       <Navbar />
       <SubContainer>
         <SectionOne>
-          <ColumnOne1></ColumnOne1>
-          <ColumnTwo1></ColumnTwo1>
+          <ColumnOne1>
+            <Earnings/>
+            <Info/>
+          </ColumnOne1>
+          <ColumnTwo1>
+            <TitleText>Your Projects</TitleText>
+            <Projects/>
+          </ColumnTwo1>
         </SectionOne>
         <SectionTwo>
-          <ColumnOne2></ColumnOne2>
+          <ColumnOne2>
+            <InvoiceContainer>
+              <TitleText>Recent Invoices</TitleText>
+              <Invoices/>
+            </InvoiceContainer>
+            <JoinSlack/>
+          </ColumnOne2>
           <ColumnTwo2></ColumnTwo2>
         </SectionTwo>
       </SubContainer>
@@ -61,6 +78,10 @@ const ColumnOne1 = styled.div`
 `;
 
 const ColumnOne2 = styled.div``;
+
+const InvoiceContainer = styled.div`
+height: 60%;
+`;
 
 const ColumnTwo1 = styled.div`
   display: flex;
