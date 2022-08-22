@@ -35,7 +35,7 @@ function Info() {
 }
 
 const InfoCard = styled.div`
-height: 120%;
+height: 112%;
 width: 14rem;
 background-color: white;
 border-radius: 1rem;
@@ -46,6 +46,9 @@ transition: 0.4s ease-in-out;
 &:hover{
     box-shadow: ${hoverEffect};
 }
+@media screen and (min-width: 320px) and (max-width: 1080px){
+    width: 80%;
+  }
 `;
 
 const Card = styled.div`

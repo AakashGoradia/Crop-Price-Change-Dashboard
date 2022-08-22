@@ -32,6 +32,12 @@ transition: 0.4s ease-in-out;
 &:hover{
     box-shadow: ${hoverEffect};
 }
+@media screen and (min-width: 320px) and (max-width: 1080px){
+    width: 80%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: max-content;
+  }
 `;
 
 const CardContent = styled.div`
@@ -40,6 +46,10 @@ width: 100%;
 display:flex;
 align-items: center;
 justify-content: space-between;
+@media screen and (min-width: 320px) and (max-width: 1080px){
+    flex-direction: column;
+    gap: 1rem;
+  }
 `;
 
 const Slack = styled.div`
